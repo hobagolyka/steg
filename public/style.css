@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Rock+Salt');
+
+body {
+    background-color: #2a2525;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+}
+
+.maintitle{
+    text-align: center;
+    letter-spacing: 10px;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+.blokk{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.navbar-nav {
+    width: 200px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* unvisited link */
+a:link {
+    color: white;
+}
+
+/* visited link */
+a:visited {
+    color: white;
+}
+
+/* mouse over link */
+a:hover {
+    color: red;
+}
+
+/* selected link */
+a:active {
+    color: white;
+}
+
+.menu {
+    text-align: center;
+    letter-spacing: 5px;
+}
+
+.huen{
+    padding-left: 40px;
+    padding-right: 30px;
+}
+
+#map {
+    width: 100%;
+    height: 400px;
+    background-color: grey;
+}
+
+.modal{
+    color: black;
+}
+
+.light {
+    width: 100%;
+    background-color: #ece7e1;
+    color: #282828;
+}
+
+.contact{
+    letter-spacing: 3px;
+}
+
+.carousel-caption {
+    bottom: 40%;
+    font-family: 'Rock Salt', cursive;
+}
+
+#front {
+    opacity: 0.5;
+}
+
+.photos {
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+.photos2 {
+    padding-bottom: 4px;
+}
+
+.container_ {
+    max-width: inherit;
+}
+
+/* Gray Scale */
+.h_gray{
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+.h_gray:hover {
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+}
+

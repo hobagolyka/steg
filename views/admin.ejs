@@ -1,0 +1,95 @@
+<% include header %>
+<div class="container paddd">
+    <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-12 col-xs-12">
+            <h2><%= type %></h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-12 col-xs-12">
+            <table class="table table-hover">
+                <thead>
+                <tr>
+                    <th scope="col">Étel neve</th>
+                    <th scope="col">Leírás</th>
+                    <th scope="col">Ár (HUF)</th>
+                    <th scope="col">Szerkesztés</th>
+                    <th scope="col">Törlés</th>
+                </tr>
+                </thead>
+                <tbody>
+                <% for(var i = 0; i < menu.length; i++){%>
+                <tr>
+                    <td><%= menu[i].kaja %></td>
+                    <td><%= menu[i].leiras %></td>
+                    <td><%= menu[i].ar %></td>
+                    <td>
+                        <button type="button" class="btn btn-outline-success"><i class="fas fa-edit" data-toggle="modal" data-target="#modal<%= menu[i].id %>"></i></button>
+                    </td>
+                    <td>
+                        <a href="/admin/delete/<%= menu[i].id%>"><button type="button" class="btn btn-outline-danger megerosites"><i class="fas fa-trash"></i></button></a>
+                    </td>
+                </tr>
+                <!-- Modal -->
+                <div class="modal fade" id="modal<%= menu[i].id %>" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLongTitle">Szerkesztés</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <form method="post" action="/admin/update/<%= menu[i].id%>">
+                            <div class="modal-body">
+
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="basic-addon1">Étel neve</span>
+                                        </div>
+                                        <input type="text" class="form-control" name="etel" value="<%= menu[i].kaja %>">
+                                    </div>
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="basic-addon1">Ár (HUF)</span>
+                                        </div>
+                                        <input type="number" class="form-control" name="ar" value="<%= menu[i].ar %>">
+                                    </div>
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend">
+                                            <label class="input-group-text" for="inputGroupSelect01">Kategória</label>
+                                        </div>
+                                        <select class="custom-select" id="menuselect" name="type" value="<%= menu[i].type %>">
+                                            <option value="eloetel" <% if(menu[i].type == 'eloetel'){%> selected <%}%>>Előételek</option>
+                                            <option value="leves" <% if(menu[i].type == 'leves'){%> selected <%}%>>Levesek</option>
+                                            <option value="salata" <% if(menu[i].type == 'salata'){%> selected <%}%>>Saláták</option>
+                                            <option value="roston" <% if(menu[i].type == 'roston'){%> selected <%}%>>Rostonsült grillételek</option>
+                                            <option value="frissen" <% if(menu[i].type == 'frissen'){%> selected <%}%>>Frissensültek</option>
+                                            <option value="olaszos" <% if(menu[i].type == 'olaszos'){%> selected <%}%>>Olaszos tésztafélék</option>
+                                            <option value="hazajanlat" <% if(menu[i].type == 'hazajanlat'){%> selected <%}%>>Ház ajánlata</option>
+                                            <option value="pizza" <% if(menu[i].type == 'pizza'){%> selected <%}%>>Pizzák</option>
+                                            <option value="desszert" <% if(menu[i].type == 'desszert'){%> selected <%}%>>Desszertek</option>
+                                        </select>
+                                    </div>
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text">Leírás</span>
+                                        </div>
+                                        <textarea class="form-control" name="leiras"><%= menu[i].leiras %></textarea>
+                                    </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Bezár</button>
+                                <button type="submit" class="btn btn-primary">Mentés</button>
+                            </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <%}%>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<% include footer %>
