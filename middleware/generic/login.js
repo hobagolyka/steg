@@ -6,7 +6,7 @@ var md5 = require('md5');
 function dbconnect(req, callback, data) {
     var username = data.user;
 
-    connection.query('SELECT * FROM users', function(err,row){
+    connection.query('SELECT * FROM users WHERE user = ' + mysql.escape(data.user), function(err,row){
         if (err) {
             throw err;
         }
@@ -28,7 +28,6 @@ module.exports = function () {
         dbconnect(req, function(err, result){
             if (err) throw err;
             else {
-
                 if(result.length == 0){
                     res.tpl.alert = true;
                     return next();
@@ -36,7 +35,6 @@ module.exports = function () {
                 else{
                     var password = req.body.pw;
                     var crypt = md5(password);
-
                     if(crypt == result[0].pw){
                         req.session.userid = result[0].id * 123973;
                     }
