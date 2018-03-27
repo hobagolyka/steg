@@ -34,6 +34,12 @@ module.exports = function () {
             case 'frissen':
                 category = 'Frissensültek';
                 break;
+            case 'hal':
+                category = 'Halételek';
+                break;
+            case 'koret':
+                category = 'Köretek';
+                break;
             case 'olaszos':
                 category = 'Olaszos tésztafélék';
                 break;
