@@ -4,42 +4,48 @@
     <div class="row">
         <div class="col-sm-12 col-md-12 col-lg-12 col-xs-12">
             <form method="post" action="/admin/save">
-            <div class="input-group mb-3">
-                <div class="input-group-prepend">
-                    <span class="input-group-text" id="basic-addon1">Étel neve</span>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon1">Étel neve</span>
+                    </div>
+                    <input type="text" class="form-control" name="etel">
                 </div>
-                <input type="text" class="form-control" name="etel">
-            </div>
-            <div class="input-group mb-3">
-                <div class="input-group-prepend">
-                    <span class="input-group-text" id="basic-addon1">Ár (HUF)</span>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon1">Ár (HUF)</span>
+                    </div>
+                    <input type="number" class="form-control" name="ar">
                 </div>
-                <input type="number" class="form-control" name="ar">
-            </div>
-            <div class="input-group mb-3">
-                <div class="input-group-prepend">
-                    <label class="input-group-text" for="inputGroupSelect01">Kategória</label>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <label class="input-group-text" for="inputGroupSelect01">Kategória</label>
+                    </div>
+                    <select class="custom-select" id="inputGroupSelect01" name="type">
+                        <option value="eloetel">Előételek</option>
+                        <option value="leves">Levesek</option>
+                        <option value="salata">Saláták</option>
+                        <option value="roston">Rostonsült grillételek</option>
+                        <option value="frissen">Frissensültek</option>
+                        <option value="hal">Halételek</option>
+                        <option value="koret">Köretek</option>
+                        <option value="olaszos">Olaszos tésztafélék</option>
+                        <option value="hazajanlat">Ház ajánlata</option>
+                        <option value="pizza">Pizzák</option>
+                        <option value="desszert">Desszertek</option>
+                    </select>
                 </div>
-                <select class="custom-select" id="inputGroupSelect01" name="type">
-                    <option value="eloetel">Előételek</option>
-                    <option value="leves">Levesek</option>
-                    <option value="salata">Saláták</option>
-                    <option value="roston">Rostonsült grillételek</option>
-                    <option value="frissen">Frissensültek</option>
-                    <option value="hal">Halételek</option>
-                    <option value="koret">Köretek</option>
-                    <option value="olaszos">Olaszos tésztafélék</option>
-                    <option value="hazajanlat">Ház ajánlata</option>
-                    <option value="pizza">Pizzák</option>
-                    <option value="desszert">Desszertek</option>
-                </select>
-            </div>
-            <div class="input-group mb-3">
-                <div class="input-group-prepend">
-                    <span class="input-group-text">Leírás</span>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">Leírás</span>
+                    </div>
+                    <textarea class="form-control" name="leiras"></textarea>
                 </div>
-                <textarea class="form-control" name="leiras"></textarea>
-            </div>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">Kép feltöltése</span>
+                    </div>
+                    <input type="file" class="btn btn-primary" name="pic" accept="image/*">
+                </div>
                 <button type="submit" class="btn btn-primary">Mentés</button>
             </form>
         </div>

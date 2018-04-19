@@ -1,5 +1,7 @@
 var mysql = require('mysql');
 var connection = require('../../config/config');
+var path = require('path');
+var fs = require('fs');
 
 function dbconnect(callback, data) {
 
@@ -17,6 +19,7 @@ function dbconnect(callback, data) {
 module.exports = function () {
 
     return function (req, res, next) {
+
         var p = req.body;
 
         if(p.etel == ''){

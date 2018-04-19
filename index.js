@@ -34,6 +34,9 @@ app.use(bodyParser.urlencoded({
     extended: true
 }));
 
+
+app.use(bodyParser({uploadDir:'/public/image'}));
+
 /**
  * Let's creat the .tpl and .error on the res object
  */

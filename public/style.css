@@ -20,7 +20,7 @@ body {
 }
 
 .navbar-nav {
-    width: 200px;
+    width: 250px;
     color: white;
     font-weight: bold;
     font-size: 20px;
@@ -38,7 +38,7 @@ a:visited {
 
 /* mouse over link */
 a:hover {
-    color: red;
+    color: antiquewhite;
 }
 
 /* selected link */
@@ -73,7 +73,14 @@ a:active {
 }
 
 .contact{
-    letter-spacing: 3px;
+    letter-spacing: 1px;
+    font-size: 13px;
+}
+
+.c_title{
+    font-size: 18px;
+    letter-spacing: 4px;
+    font-weight: bold;
 }
 
 .carousel-caption {
@@ -108,5 +115,19 @@ a:active {
 .h_gray:hover {
     -webkit-filter: grayscale(0);
     filter: grayscale(0);
+}
+
+.nav-link{
+    font-size: 18px;
+    letter-spacing: 4px;
+    font-weight: 100;
+}
+
+.footer{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #282828;
+    opacity: 0.2;
+    font-size: 12px;
 }
 
