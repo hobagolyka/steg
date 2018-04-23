@@ -9,6 +9,11 @@ var changepwMW = require('../middleware/data/changePW');
 
 module.exports = function(app) {
 
+    app.use('/admin/add',
+        authMW(),
+        renderMW('add', 'Add')
+    );
+
     app.use('/admin/changepw',
         authMW(),
         changepwMW(),
