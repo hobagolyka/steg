@@ -5,12 +5,14 @@ var redirectMW = require('../middleware/generic/redirect');
 var authMW = require('../middleware/generic/auth');
 var updateMW = require('../middleware/data/updateData');
 var deleteMW = require('../middleware/data/deleteData');
+var changepwMW = require('../middleware/data/changePW');
 
 module.exports = function(app) {
 
-    app.use('/admin/add',
+    app.use('/admin/changepw',
         authMW(),
-        renderMW('add', 'Admin')
+        changepwMW(),
+        redirectMW('')
     );
 
     app.use('/admin/save',

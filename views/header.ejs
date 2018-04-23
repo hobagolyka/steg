@@ -47,7 +47,7 @@
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
                     <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#exampleModalCenter">
-                        Jelszó változtatás
+                        Profil
                     </button>
                 </li>
                 <li class="nav-item">
@@ -63,20 +63,23 @@
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLongTitle">Új jelszó megadása</h5>
+                <h5 class="modal-title" id="exampleModalLongTitle">Profil</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
+            <form action="/admin/changepw" method="post">
             <div class="modal-body">
-                <form class="form-inline">
-                    <input class="form-control" type="password">
-                </form>
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">Új jelszó:</span>
+                    </div>
+                    <input class="form-control" type="password" name="pw">
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Bezár</button>
-                <button type="button" class="btn btn-primary">Mentés</button>
+                <button type="submit" class="btn btn-primary">Mentés</button>
             </div>
+            </form>
         </div>
     </div>
 </div>

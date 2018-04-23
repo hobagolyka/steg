@@ -38,7 +38,7 @@
                 </tr>
                 <!-- Modal -->
                 <div class="modal fade" id="modal<%= menu[i].id %>" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-dialog" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
                                 <h5 class="modal-title" id="exampleModalLongTitle">Szerkesztés</h5>
@@ -60,6 +60,12 @@
                                         <span class="input-group-text">Étel neve (angol)</span>
                                     </div>
                                     <input type="text" class="form-control" name="etel_EN" value="<%= menu[i].kaja_EN %>">
+                                </div>
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">Étel neve (német)</span>
+                                    </div>
+                                    <input type="text" class="form-control" name="etel_D" value="<%= menu[i].kaja_D %>">
                                 </div>
                                     <div class="input-group mb-3">
                                         <div class="input-group-prepend">
@@ -93,7 +99,13 @@
                                     <div class="input-group-prepend">
                                         <span class="input-group-text">Leírás (angol)</span>
                                     </div>
-                                    <textarea class="form-control" name="leiras_EN"><%= menu[i].leiras %></textarea>
+                                    <textarea class="form-control" name="leiras_EN"><%= menu[i].leiras_EN %></textarea>
+                                </div>
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">Leírás (német)</span>
+                                    </div>
+                                    <textarea class="form-control" name="leiras_D"><%= menu[i].leiras_D %></textarea>
                                 </div>
                             </div>
                             <div class="modal-footer">
