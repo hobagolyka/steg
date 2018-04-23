@@ -6,9 +6,21 @@
             <form method="post" action="/admin/save">
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
-                        <span class="input-group-text" id="basic-addon1">Étel neve</span>
+                        <span class="input-group-text">Étel neve</span>
                     </div>
                     <input type="text" class="form-control" name="etel">
+                </div>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">Étel neve (angol</span>
+                    </div>
+                    <input type="text" class="form-control" name="etel_EN">
+                </div>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">Étel neve (német)</span>
+                    </div>
+                    <input type="text" class="form-control" name="etel_D">
                 </div>
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
@@ -42,9 +54,15 @@
                 </div>
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
-                        <span class="input-group-text">Kép feltöltése</span>
+                        <span class="input-group-text">Angol leírás</span>
                     </div>
-                    <input type="file" class="btn btn-primary" name="pic" accept="image/*">
+                    <textarea class="form-control" name="leiras_EN"></textarea>
+                </div>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">Német leírás</span>
+                    </div>
+                    <textarea class="form-control" name="leiras_D"></textarea>
                 </div>
                 <button type="submit" class="btn btn-primary">Mentés</button>
             </form>

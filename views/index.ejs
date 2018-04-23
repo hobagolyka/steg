@@ -12,6 +12,7 @@
     <title>Stég Pizzéria</title>
 </head>
 <body>
+<a href="javascript:" id="return-to-top"><i class="fas fa-arrow-up"></i></a>
 <nav class="navbar navbar-expand-lg">
     <!-- Just an image -->
     <nav class="navbar">
@@ -26,20 +27,20 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mx-auto">
             <li class="nav-item">
-                <a class="nav-link" href="#etlap">étlap</a>
+                <a class="nav-link down" href="#etlap">étlap</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#rolunk">rólunk</a>
+                <a class="nav-link down" href="#rolunk">rólunk</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">kapcsolat</a>
+                <a class="nav-link down" href="#kapcsolat">kapcsolat</a>
             </li>
         </ul>
         <a href="#">
             <i class="fas fa-sign-in-alt" data-toggle="modal" data-target="#loginscreen"></i>
         </a>
 
-        <span class="huen"><b> HU</b> | EN</span>
+        <span class="huen"><b> HU</b> | EN | GE</span>
     </div>
 </nav>
 <!-- Modal -->
@@ -63,7 +64,6 @@
                         <label for="message-text" class="col-form-label">Jelszó:</label>
                         <input  type="password" class="form-control" id="message-text" name="pw">
                     </div>
-
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Bezár</button>
@@ -79,7 +79,7 @@
         <div class="carousel-item active">
             <img class="d-block w-100" width="100%" id="front" src="images/bh.jpg">
             <div class="carousel-caption d-none d-md-block">
-                <h1>Stég Pizzéria és étterem<br>Tihany</h1>
+                <img src="images/logo.png" width="40%">
             </div>
         </div>
     </div>
@@ -129,19 +129,21 @@
 </div>
 <div class="container">
     <div class="row blokk" id="rolunk">
-        <div class="col-sm-5 offset-sm-2 col-md-5 offset-md-2 col-xs-12 offset-xs-0 col-lg-5 offset-lg-2">
+        <div class="col-sm-8 offset-sm-2 col-md-8 offset-md-2 col-xs-12 offset-xs-0 col-lg-8 offset-lg-2">
             <h1 class="maintitle"> Rólunk </h1>
             Tihany szívében, az Apátság lábánál lévő családias kis vendéglőnkbe várunk szeretettel minden kedves vendéget.
             Hangulatos kert helységünk a főutcáról nyílik, kínálatunk közt szerepelnek különféle csapolt sörök, finom helyi borok,
             frissen facsart gyümölcsből limonádék. Ezen kívül roston sült grill ételek, frissensültek, olaszos tészták, friss saláta különlegességek,
             illetve a fő különlegességünk a házi készítésű, kemencében sült pizzák várják az idelátogatókat.
         </div>
-        <div class="col-sm-3 col-md-3 col-xs-12 col-lg-3">
-            <img src="images/logo.png" width="100%">
-        </div>
     </div>
 </div>
 <div class="container container_ blokk">
+    <div class="row">
+        <div class="col-sm-12 col-md-12 col-xs-12 col-lg-12 photos">
+            <img src="images/panorama.jpg" class="photos2 h_gray" width="100%">
+        </div>
+    </div>
     <div class="row">
         <div class="col-sm-4 col-md-4 col-xs-12 col-lg-4 photos">
             <img width="100%" class="photos2 h_gray" src="images/gallery/1.JPG">
@@ -206,7 +208,42 @@
 <div class="footer" align="center">
     © 2018 TÓTH JUDIT
 </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script
+        src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
 <script>
+    $(document).ready(function(){
+        /* scroll menu */
+        $('a').on('click', function(event) {
+            if (this.hash !== "") {
+                event.preventDefault();
+                var hash = this.hash;
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 800, function(){
+                    window.location.hash = hash;
+                });
+            }
+        });
+        /* scroll to the top icon */
+        $(window).scroll(function() {
+            if ($(this).scrollTop() >= 50) {
+                $('#return-to-top').fadeIn(200);
+            } else {
+                $('#return-to-top').fadeOut(200);
+            }
+        });
+        /* scroll to the top click */
+        $('#return-to-top').click(function() {
+            $('body,html').animate({
+                scrollTop : 0
+            }, 500);
+        });
+    });
+
     function initMap() {
         var uluru = {lat: 46.9135, lng: 17.8885};
         var map = new google.maps.Map(document.getElementById('map'), {
@@ -219,11 +256,7 @@
         });
     }
 </script>
-<script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDy544iCPzaulf0nJ8_E7ILUNt9n2ZXI6M&callback=initMap">
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDy544iCPzaulf0nJ8_E7ILUNt9n2ZXI6M&callback=initMap">
 </script>
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
