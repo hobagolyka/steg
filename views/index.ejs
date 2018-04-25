@@ -89,44 +89,20 @@
     <div class="row blokk" id="etlap">
         <div class="col-sm-12 col-md-12 col-xs-12 col-lg-12">
             <h1 class="maintitle"> Étlap </h1>
+
+            <h4 class="picmenu"><a href="menu.pdf"><i class="fas fa-utensils maintitle"></i> Képes étlap megtekintése</a></h4>
+        </div>
             <div class="menu">
-                <a href="#eloetelek"> Eőételek</a> | <a href="#levesek">Levesek</a> | <a href="#salatak">Saláták</a> | Rostonsült grillételek | Frissensültek | Halételek | Köretek |
-                Olaszos tésztafélék | Ház ajánlata | Pizzák | Desszertek
+                <a href="#eloetel"> Eőételek</a> | <a href="#leves">Levesek</a> | <a href="#salata">Saláták</a> |
+                <a href="#roston">Roston sült grillételek</a> | <a href="#frissen">Frissensültek</a> |
+                <a href="#hal">Halételek</a> | <a href="#koret">Köretek</a> |
+                <a href="#olaszos">Olaszos tésztafélék</a> | <a href="#hazajanlat">Ház ajánlata</a> |
+                <a href="#pizza">Pizzák</a> | <a href="#desszert">Desszertek</a>
             </div>
         </div>
     </div>
 </div>
-<div class="container">
-    <div class="row">
-            <div class="col-sm-6 col-md-6 col-xs-12 col-lg-6">
-
-        <h1 class="maintitle"  align="center">Előételek</h1>
-        <table class="table table-hover">
-            <tbody>
-            <% menu.forEach((item)=> { if(item.type == 'eloetel') {%>
-            <tr>
-                <td><b><%= item.kaja %></b><br><%= item.leiras %></td>
-                <td align="right"><%= item.ar %> Ft</td>
-            </tr>
-            <%}});%>
-            </tbody>
-
-        </table>
-            </div>
-        <div class="col-sm-6 col-md-6 col-xs-12 col-lg-6">
-        <h1 class="maintitle"  align="center">Levesek</h1>
-        <table class="table table-hover">
-            <tbody>
-            <% menu.forEach((item)=> { if(item.type == 'leves') {%>
-            <tr>
-                <td><b><%= item.kaja %></b><br><%= item.leiras %></td>
-                <td><%= item.ar %> Ft</td>
-            </tr>
-            <%}});%>
-            </tbody>
-        </table>
-    </div></div>
-</div>
+<% include menu %>
 <div class="container">
     <div class="row blokk" id="rolunk">
         <div class="col-sm-8 offset-sm-2 col-md-8 offset-md-2 col-xs-12 offset-xs-0 col-lg-8 offset-lg-2">
@@ -167,7 +143,6 @@
 </div>
 <div id="map"></div>
 <div class="container blokk contact" id="kapcsolat">
-
     <div class="row">
         <div class="col-sm-5 offset-sm-2 col-md-5 offset-md-2 col-xs-12 offset-xs-0 col-lg-5 offset-lg-2">
             <div class="c_title">Cím:</div>

@@ -15,6 +15,26 @@ body {
     padding-bottom: 20px;
 }
 
+.cathegory{
+    text-align: left;
+    letter-spacing: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 5px;
+    padding-top: 15px;
+}
+
+.description{
+    font-size: 15px;
+    font-style: italic;
+}
+
+.picmenu{
+    text-align: center;
+    font-size: 16px;
+    letter-spacing: 5px;
+}
+
 .blokk{
     padding-top: 30px;
     padding-bottom: 30px;
@@ -40,6 +60,7 @@ a:visited {
 /* mouse over link */
 a:hover {
     color: antiquewhite;
+    text-decoration: none;
 }
 
 /* selected link */
