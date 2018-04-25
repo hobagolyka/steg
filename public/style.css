@@ -24,6 +24,10 @@ body {
     padding-top: 15px;
 }
 
+.food_title{
+    text-transform: uppercase;
+}
+
 .description{
     font-size: 15px;
     font-style: italic;
