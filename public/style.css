@@ -199,7 +199,7 @@ a:active {
 }
 
 .table td, .table th {
-    padding: 0rem;
+    padding: 0.4rem;
     vertical-align: top;
     border-top: 0px solid #dee2e6;
 }

@@ -152,12 +152,13 @@
             <h1 class="cathegory" id="pizza">Pizzák</h1>
             <table class="table table-hover">
                 <tbody>
-                <% menu.forEach((item)=> { if(item.type == 'pizza') {%>
+                <% var count = 0;  menu.forEach((item)=> { if(item.type == 'pizza') { count++; }});%>
+                <% var i = 0; while(i<count/2){ if(menu[i].type == 'pizza') {%>
                 <tr>
-                    <td><span class="food_title"><%= item.kaja %></span><br><span class="description"><%= item.leiras %></span></td>
-                    <td><%= item.ar %>,-</td>
+                    <td><span class="food_title"><%= menu[i].kaja %></span><br><span class="description"><%= menu[i].leiras %></span></td>
+                    <td><%= menu[i].ar %>,-</td>
                 </tr>
-                <%}});%>
+                <%} i++; }%>
                 </tbody>
 
             </table>
@@ -165,12 +166,12 @@
         <div class="col-sm-6 col-md-6 col-xs-12 col-lg-6">
             <table class="table table-hover">
                 <tbody>
-                <% menu.forEach((item)=> { if(item.type == 'pizza') {%>
+                <% var i = count/2; while(i<count){ if(menu[i].type == 'pizza') {%>
                 <tr>
-                    <td><span class="food_title"><%= item.kaja %></span><br><span class="description"><%= item.leiras %></span></td>
-                    <td><%= item.ar %>,-</td>
+                    <td><span class="food_title"><%= menu[i].kaja %></span><br><span class="description"><%= menu[i].leiras %></span></td>
+                    <td><%= menu[i].ar %>,-</td>
                 </tr>
-                <%}});%>
+                <%} i++; }%>
                 </tbody>
             </table>
         </div>
