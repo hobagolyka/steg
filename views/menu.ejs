@@ -44,10 +44,10 @@
             </table>
         </div>
         <div class="col-sm-6 col-md-6 col-xs-12 col-lg-6">
-            <h1 class="cathegory" id="roston">Roston sült grillételek</h1>
+            <h1 class="cathegory" id="hal">Halételek</h1>
             <table class="table table-hover">
                 <tbody>
-                <% menu.forEach((item)=> { if(item.type == 'roston') {%>
+                <% menu.forEach((item)=> { if(item.type == 'hal') {%>
                 <tr>
                     <td><span class="food_title"><%= item.kaja %></span><br><span class="description"><%= item.leiras %></span></td>
                     <td><%= item.ar %>,-</td>
@@ -74,10 +74,10 @@
             </table>
         </div>
         <div class="col-sm-6 col-md-6 col-xs-12 col-lg-6">
-            <h1 class="cathegory" id="hal">Halételek</h1>
+            <h1 class="cathegory" id="roston">Roston sült grillételek</h1>
             <table class="table table-hover">
                 <tbody>
-                <% menu.forEach((item)=> { if(item.type == 'hal') {%>
+                <% menu.forEach((item)=> { if(item.type == 'roston') {%>
                 <tr>
                     <td><span class="food_title"><%= item.kaja %></span><br><span class="description"><%= item.leiras %></span></td>
                     <td><%= item.ar %>,-</td>
@@ -175,4 +175,5 @@
             </table>
         </div>
     </div>
+    <span class="description">Az árak magyar forintban értendőek.</span>
 </div>

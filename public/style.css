@@ -45,29 +45,25 @@ body {
 }
 
 .navbar-nav {
-    width: 160px;
+    width: 170px;
     color: white;
     font-weight: bold;
     font-size: 20px;
 }
 
-/* unvisited link */
 a:link {
     color: white;
 }
 
-/* visited link */
 a:visited {
     color: white;
 }
 
-/* mouse over link */
 a:hover {
     color: antiquewhite;
     text-decoration: none;
 }
 
-/* selected link */
 a:active {
     color: white;
 }
@@ -110,7 +106,7 @@ a:active {
 }
 
 .carousel-caption {
-    bottom: 20%;
+    bottom: 23%;
     font-family: 'Rock Salt', cursive;
 }
 
@@ -156,7 +152,6 @@ a:active {
     opacity: 0.2;
     font-size: 12px;
 }
-
 
 #return-to-top {
     position: fixed;
@@ -208,4 +203,9 @@ a:active {
     vertical-align: top;
     border-top: 0px solid #dee2e6;
 }
+
+.aboutus{
+    text-align: center;
+}
+
 
