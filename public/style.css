@@ -205,7 +205,34 @@ a:active {
 }
 
 .aboutus{
-    text-align: center;
+    text-align: justify;
 }
 
+.parallax {
+    /* The image used */
+    background-image: url("images/panorama.jpg");
+
+    /* Set a specific height */
+    min-height: 250px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.caption {
+    position: absolute;
+    left: 0;
+    top: 46%;
+    width: 100%;
+    text-align: center;
+    letter-spacing: 10px;
+    font-weight: bold;
+}
+
+.fix{
+    position: relative;
+}
 

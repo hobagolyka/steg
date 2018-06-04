@@ -70,7 +70,17 @@
                 </tr>
                 <%}});%>
                 </tbody>
-
+            </table>
+            <h1 class="cathegory" id="olaszos">Olaszos tésztafélék</h1>
+            <table class="table table-hover">
+                <tbody>
+                <% menu.forEach((item)=> { if(item.type == 'olaszos') {%>
+                <tr>
+                    <td><span class="food_title"><%= item.kaja %></span><br><span class="description"><%= item.leiras %></span></td>
+                    <td><%= item.ar %>,-</td>
+                </tr>
+                <%}});%>
+                </tbody>
             </table>
         </div>
         <div class="col-sm-6 col-md-6 col-xs-12 col-lg-6">
@@ -89,7 +99,32 @@
     </div>
     <div class="row">
         <div class="col-sm-6 col-md-6 col-xs-12 col-lg-6">
+            <h1 class="cathegory" id="hazajanlat">Ház ajánlata</h1>
+            <table class="table table-hover">
+                <tbody>
+                <% menu.forEach((item)=> { if(item.type == 'hazajanlat') {%>
+                <tr>
+                    <td><span class="food_title"><%= item.kaja %></span><br><span class="description"><%= item.leiras %></span></td>
+                    <td align="right"><%= item.ar %>,-</td>
+                </tr>
+                <%}});%>
+                </tbody>
 
+            </table>
+            <h1 class="cathegory" id="desszert">Desszertek</h1>
+            <table class="table table-hover">
+                <tbody>
+                <% menu.forEach((item)=> { if(item.type == 'desszert') {%>
+                <tr>
+                    <td><span class="food_title"><%= item.kaja %></span><br><span class="description"><%= item.leiras %></span></td>
+                    <td><%= item.ar %>,-</td>
+                </tr>
+                <%}});%>
+                </tbody>
+            </table>
+
+        </div>
+        <div class="col-sm-6 col-md-6 col-xs-12 col-lg-6">
             <h1 class="cathegory" id="koret">Köretek</h1>
             <table class="table table-hover">
                 <tbody>
@@ -103,66 +138,32 @@
 
             </table>
         </div>
-        <div class="col-sm-6 col-md-6 col-xs-12 col-lg-6">
-            <h1 class="cathegory" id="olaszos">Olaszos tésztafélék</h1>
-            <table class="table table-hover">
-                <tbody>
-                <% menu.forEach((item)=> { if(item.type == 'olaszos') {%>
-                <tr>
-                    <td><span class="food_title"><%= item.kaja %></span><br><span class="description"><%= item.leiras %></span></td>
-                    <td><%= item.ar %>,-</td>
-                </tr>
-                <%}});%>
-                </tbody>
-            </table>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-sm-6 col-md-6 col-xs-12 col-lg-6">
-
-            <h1 class="cathegory" id="hazajanlat">Ház ajánlata</h1>
-            <table class="table table-hover">
-                <tbody>
-                <% menu.forEach((item)=> { if(item.type == 'hazajanlat') {%>
-                <tr>
-                    <td><span class="food_title"><%= item.kaja %></span><br><span class="description"><%= item.leiras %></span></td>
-                    <td align="right"><%= item.ar %>,-</td>
-                </tr>
-                <%}});%>
-                </tbody>
-
-            </table>
-        </div>
-        <div class="col-sm-6 col-md-6 col-xs-12 col-lg-6">
-            <h1 class="cathegory" id="desszert">Desszertek</h1>
-            <table class="table table-hover">
-                <tbody>
-                <% menu.forEach((item)=> { if(item.type == 'desszert') {%>
-                <tr>
-                    <td><span class="food_title"><%= item.kaja %></span><br><span class="description"><%= item.leiras %></span></td>
-                    <td><%= item.ar %>,-</td>
-                </tr>
-                <%}});%>
-                </tbody>
-            </table>
-        </div>
     </div>
     <div class="row">
         <div class="col-sm-6 col-md-6 col-xs-12 col-lg-6">
             <h1 class="cathegory" id="pizza">Pizzák</h1>
             <table class="table table-hover">
                 <tbody>
-                <% menu.forEach((item)=> { if(item.type == 'pizza') {%>
+                <% pizza1.forEach((item)=> {%>
                 <tr>
                     <td><span class="food_title"><%= item.kaja %></span><br><span class="description"><%= item.leiras %></span></td>
                     <td><%= item.ar %>,-</td>
                 </tr>
-                <%}});%>
+                <%});%>
                 </tbody>
-
             </table>
         </div>
         <div class="col-sm-6 col-md-6 col-xs-12 col-lg-6">
+            <table class="table table-hover">
+                <tbody>
+                <% pizza2.forEach((item)=> {%>
+                <tr>
+                    <td><span class="food_title"><%= item.kaja %></span><br><span class="description"><%= item.leiras %></span></td>
+                    <td><%= item.ar %>,-</td>
+                </tr>
+                <%});%>
+                </tbody>
+            </table>
         </div>
     </div>
     <span class="description">Az árak magyar forintban értendőek.</span>
