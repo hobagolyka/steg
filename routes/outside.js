@@ -19,6 +19,10 @@ module.exports = function(app) {
         renderMW('index', 'title')
     );
 
+    app.use('/show_menu',
+        renderMW('etlap', 'title')
+    );
+
     app.get('/logout',
         logoutMW(),
         function(req, res, next){

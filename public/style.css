@@ -8,6 +8,8 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
+.color{ color: white; }
+
 .maintitle{
     text-align: center;
     letter-spacing: 10px;
@@ -29,7 +31,7 @@ body {
 }
 
 .description{
-    font-size: 15px;
+    font-size: 14px;
     font-style: italic;
 }
 
@@ -100,12 +102,17 @@ a:active {
 }
 
 .c_title{
-    font-size: 18px;
-    letter-spacing: 4px;
+    font-size: 16px;
+    letter-spacing: 3px;
     font-weight: bold;
 }
 
-.carousel-caption {
+.carousel-caption_down {
+    bottom: 4%;
+    font-family: 'Rock Salt', cursive;
+}
+
+.carousel-caption_up {
     bottom: 23%;
     font-family: 'Rock Salt', cursive;
 }
