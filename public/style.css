@@ -243,3 +243,7 @@ a:active {
     position: relative;
 }
 
+.table thead th {
+    border-bottom: 0px dotted #725757;
+}
+
