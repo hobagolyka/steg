@@ -19,6 +19,22 @@ module.exports = function(app) {
         renderMW('index', 'title')
     );
 
+    app.use('/english',
+        inverseMW(),
+        loginMW(),
+        loadPizzaMW(),
+        loadDataMW(),
+        renderMW('index_en', 'title')
+    );
+
+    app.use('/german',
+        inverseMW(),
+        loginMW(),
+        loadPizzaMW(),
+        loadDataMW(),
+        renderMW('index_d', 'title')
+    );
+
     app.use('/show_menu',
         renderMW('etlap', 'title')
     );

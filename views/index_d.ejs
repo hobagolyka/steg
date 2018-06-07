@@ -27,20 +27,20 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mx-auto">
             <li class="nav-item">
-                <a class="nav-link down" href="#etlap">étlap</a>
+                <a class="nav-link down" href="#etlap">speisekarte</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link down" href="#rolunk">rólunk</a>
+                <a class="nav-link down" href="#rolunk">about</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link down" href="#kapcsolat">kapcsolat</a>
+                <a class="nav-link down" href="#kapcsolat">kontakt</a>
             </li>
         </ul>
         <a href="#">
             <i class="fas fa-sign-in-alt" data-toggle="modal" data-target="#loginscreen"></i>
         </a>
 
-        <span class="huen"><b> HU</b> | <a href="\english">EN</a> | <a href="\german">GE</a></span>
+        <span class="huen"><a href="\login">HU</a> | <a href="\english">EN</a> | <b>GE</b></span>
     </div>
 </nav>
 <!-- Modal -->
@@ -48,7 +48,7 @@
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="ModalLabel">Bejelentkezés</h5>
+                <h5 class="modal-title" id="ModalLabel">Log in (only for administrator)</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -57,17 +57,17 @@
                 <div class="modal-body">
 
                     <div class="form-group">
-                        <label for="recipient-name" class="col-form-label">Felhasználónév:</label>
+                        <label for="recipient-name" class="col-form-label">User name:</label>
                         <input type="text" class="form-control" id="recipient-name" name="user">
                     </div>
                     <div class="form-group">
-                        <label for="message-text" class="col-form-label">Jelszó:</label>
+                        <label for="message-text" class="col-form-label">Password:</label>
                         <input  type="password" class="form-control" id="message-text" name="pw">
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Bezár</button>
-                    <button type="submit" class="btn btn-primary">Belépés</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">Log in</button>
                 </div>
             </form>
         </div>
@@ -90,34 +90,31 @@
 <div class="container">
     <div class="row blokk" id="etlap">
         <div class="col-sm-12 col-md-12 col-xs-12 col-lg-12">
-            <h1 class="maintitle"> Étlap </h1>
+            <h1 class="maintitle">Speisekarte</h1>
 
-            <h4 class="picmenu"><a href="menu.pdf"><i class="fas fa-utensils maintitle"></i> Képes étlap megtekintése</a></h4>
+            <h4 class="picmenu"><a href="menu.pdf"><i class="fas fa-utensils maintitle"></i>Official menu with pictures</a></h4>
         </div>
         <div class="menu">
-            <a href="#eloetel"> Eőételek</a> | <a href="#leves">Levesek</a> | <a href="#salata">Saláták</a> |
-            <a href="#roston">Roston sült grillételek</a> | <a href="#frissen">Frissensültek</a> |
-            <a href="#hal">Halételek</a> | <a href="#koret">Köretek</a> |
-            <a href="#olaszos">Olaszos tésztafélék</a> | <a href="#hazajanlat">Ház ajánlata</a> |
-            <a href="#pizza">Pizzák</a> | <a href="#desszert">Desszertek</a>
+            <a href="#eloetel">Starter</a> | <a href="#leves">Soup</a> | <a href="#salata">Salad</a> |
+            <a href="#roston">Grill dishes</a> | <a href="#frissen">Main dishes</a> |
+            <a href="#hal">Fish dishes</a> | <a href="#koret">Garnish</a> |
+            <a href="#olaszos">Pasta</a> | <a href="#hazajanlat">Offer of the house</a> |
+            <a href="#pizza">Pizza</a> | <a href="#desszert">Dessert</a>
         </div>
     </div>
 </div>
 </div>
-<% include menu %>
+<% include menu_d %>
 <div class="blokk" id="rolunk">
     <div class="fix">
-        <div class="parallax"><h1 class="caption">Rólunk</h1></div>
+        <div class="parallax"><h1 class="caption">About us</h1></div>
     </div>
 </div>
 <div class="container about">
     <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 offset-lg-3 col-xl-6 offset-xl-3">
             <div class="aboutus">
-                Tihany szívében, az Apátság lábánál lévő családias kis vendéglőnkbe várunk szeretettel minden kedves vendéget.
-                Hangulatos kert helységünk a főutcáról nyílik, kínálatunk közt szerepelnek különféle csapolt sörök, finom helyi borok,
-                frissen facsart gyümölcsből limonádék. Ezen kívül roston sült grill ételek, frissensültek, olaszos tészták, friss saláta különlegességek,
-                illetve a házi készítésű, kemencében sült pizzák várják az idelátogatókat.
+                Im Herzen von Tihany, am Fuße der Abtei, begrüßen wir unsere lieben Gäste in unserem familiären kleinen „Stég“ Restaurant, welches sich nur ein paar Gehminuten von der Hauptstraße entfernt befindet. Sie können sich bei uns Innen und Außen, in unserem gemütlichen Garten ausruhen, während Sie sich aus unserem Sortiment von verschiedenen Bier vom Fass, köstliche lokale Weine und frisch gepresste Limonaden erfrischen. Darüber hinaus erwarten Sie Grillgerichte, italienische Pasta, frische Salatspezialitäten und hausgemachte Pizza im Ofen gebacken.
             </div>
         </div>
     </div>
@@ -146,90 +143,61 @@
 </div>
 
 <div class="container blokk contact" id="kapcsolat" align="left">
-    <h1 class="maintitle"> Kapcsolat </h1>
+    <h1 class="maintitle">Kontakt</h1>
     <div class="d-none d-lg-block">
-    <div class="row">
-        <table class="table">
-            <thead>
-            <tr>
-                <th><div class="c_title">Cím:</div></th>
-                <th><div class="c_title">Nyitvatartás:</div></th>
-                <th><div class="c_title">Elérhetőségek:</div></th>
-                <th><div class="c_title">Fizető eszközök:</div></th>
-                <th><div class="c_title">Házhozszállítás:</div></th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <td>Tihany, <br>Kossuth Lajos utca 18.</td>
-                <td>Márciustól novemberig, <br>minden nap, <br>10:00 - 21:00</td>
-                <td>info@stegpizzeria.hu, <br>+36 87 438 127</td>
-                <td>kézpénz, <br>szép kártya, <br>bankkártya</td>
-                <td>Tihany területén ingyen, <br>szezonális jelleggel.</td>
-            </tr>
-            </tbody>
-        </table>
-        <!--
-        <div class="col-md-2 offset-md-1 col-lg-2 offset-lg-1 col-xl-2 offset-xl-1" >
-            <div class="c_title">Cím:</div>
-            Kossuth Lajos utca 18.<br>
-            Tihany<br><br>
+        <div class="row">
+            <table class="table">
+                <thead>
+                <tr>
+                    <th><div class="c_title">Adresse:</div></th>
+                    <th><div class="c_title">Öffnungszeiten:</div></th>
+                    <th><div class="c_title">Kontakt:</div></th>
+                    <th><div class="c_title">Payment:</div></th>
+                    <th><div class="c_title">Heimbeförderung:</div></th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Tihany, <br>Kossuth Lajos utca 18.</td>
+                    <td>From March to November, <br>every day, <br>10 AM - 9 PM</td>
+                    <td>info@stegpizzeria.hu, <br>+36 87 438 127</td>
+                    <td>cash, <br>"SZÉP" card, <br>bank card</td>
+                    <td>Free in Tihany, <br>during the season.</td>
+                </tr>
+                </tbody>
+            </table>
         </div>
-        <div class="col-md-2 col-lg-2 col-xl-2">
-            <div class="c_title">Nyitvatartás:</div>
-            Márciustól novemberig<br>
-            Minden nap <br>
-            10:00 - 21:00<br><br>
-        </div>
-        <div class="col-md-2 col-lg-2 col-xl-2">
-            <div class="c_title">Elérhetőségek:</div>
-            info@stegpizzeria.hu<br>
-            +36 87 438 127<br><br>
-        </div>
-        <div class="col-md-2 col-lg-2 col-xl-2">
-            <div class="c_title">Elfogadott fizető eszközök:</div>
-            kézpénz<br>
-            szép kártya<br>
-            bankkártya<br><br>
-        </div>
-        <div class="col-md-2 col-lg-2 col-xl-2">
-            <div class="c_title">Házhozszállítás:</div>
-            Tihany területén ingyen, <br>szezonális jelleggel.
-        </div>
-
-        -->
-    </div>
     </div>
 
     <div class="row d-lg-none">
         <table class="table">
             <tbody>
             <tr>
-                <th scope="row"><div class="c_title">Cím:</div></th>
+                <th scope="row"><div class="c_title">Adresse:</div></th>
                 <td>Tihany, Kossuth Lajos utca 18.</td>
             </tr>
             <tr>
-                <th scope="row"><div class="c_title">Nyitvatartás:</div></th>
-                <td>Márciustól novemberig, minden nap, 10:00 - 21:00</td>
+                <th scope="row"><div class="c_title">Öffnungszeiten:</div></th>
+                <td>From March to November, every day, 10 AM - 9 PM</td>
             </tr>
             <tr>
-                <th scope="row"><div class="c_title">Elérhetőségek:</div></th>
+                <th scope="row"><div class="c_title">Kontakt:</div></th>
                 <td>info@stegpizzeria.hu, +36 87 438 127</td>
             </tr>
             <tr>
-                <th scope="row"><div class="c_title">Elfogadott fizető eszközök:</div></th>
-                <td>kézpénz, szép kártya, bankkártya</td>
+                <th scope="row"><div class="c_title">Payment:</div></th>
+                <td>cash, <br>"SZÉP" card, credit card, bank card</td>
             </tr>
             <tr>
-                <th scope="row"><div class="c_title">Házhozszállítás:</div></th>
-                <td>Tihany területén ingyen, szezonális jelleggel.</td>
+                <th scope="row"><div class="c_title">Heimbeförderung:</div></th>
+                <td>Free in Tihany, during the season.</td>
             </tr>
             </tbody>
         </table>
     </div>
     <div class="row" align="center">
         <div class="col-sm-12 col-md-12 col-xs-12 col-lg-12" >
-        <a target="_blank" href="https://www.facebook.com/stegpizzeriatihany/"><img width="30px" src="images/Fb.png"></a>
+            <a target="_blank" href="https://www.facebook.com/stegpizzeriatihany/"><img width="30px" src="images/Fb.png"></a>
         </div>
     </div>
 </div>
@@ -293,3 +261,5 @@
 </script>
 </body>
 </html>
+
+
