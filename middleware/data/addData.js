@@ -4,7 +4,6 @@ var path = require('path');
 var fs = require('fs');
 
 function dbconnect(callback, data) {
-
     connection.query('INSERT INTO food (kaja, kaja_EN, kaja_D, leiras, leiras_EN, leiras_D, ar,type) VALUES(' +
         mysql.escape(data.etel) + ',' +
         mysql.escape(data.etel_EN) + ',' +
@@ -37,7 +36,6 @@ module.exports = function () {
         }
 
         dbconnect(function(err, results){
-
             if (err) {
                 res.tpl.msg = err;
             }

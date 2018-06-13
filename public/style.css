@@ -53,6 +53,10 @@ body {
     font-size: 20px;
 }
 
+.d{
+    width: 190px;
+}
+
 a:link {
     color: white;
 }
