@@ -62,6 +62,7 @@
     </div>
 </div>
 
+<% include closedModal %>
 <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
     <div class="carousel-inner">
         <div class="carousel-item active">
@@ -153,7 +154,7 @@
                 <td>Tihany, <br>Kossuth Lajos utca 18.</td>
                 <td>Márciustól novemberig, <br>minden nap, <br>10:00 - 21:00</td>
                 <td>tihany@stegpizzeria.hu, <br>+36 87 438 127</td>
-                <td>kézpénz, <br>szép kártya, <br>bankkártya</td>
+                <td>készpénz, <br>szép kártya, <br>bankkártya</td>
                 <td>Tihany területén ingyen, <br>szezonális jelleggel.</td>
             </tr>
             </tbody>
@@ -198,17 +199,18 @@
 <div class="footer" align="center">
     © 2018 TÓTH JUDIT
 </div>
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-<script
-        src="https://code.jquery.com/jquery-3.3.1.js"
-        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-        crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDy544iCPzaulf0nJ8_E7ILUNt9n2ZXI6M&callback=initMap">
 </script>
-
 <script>
     $(document).ready(function(){
+        $(window).on('load', function(){
+            $('#closedModal').modal('show');
+        });
+
         /* scroll menu */
         $('a').on('click', function(event) {
             if (this.hash !== "") {
@@ -248,8 +250,6 @@
             map: map
         });
     }
-</script>
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDy544iCPzaulf0nJ8_E7ILUNt9n2ZXI6M&callback=initMap">
 </script>
 </body>
 </html>
