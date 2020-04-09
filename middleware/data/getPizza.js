@@ -18,7 +18,6 @@ module.exports = function () {
         dbconnect(req, function(err, result){
             if (err) throw err;
             else {
-
                 var pizza1 = [];
                 var pizza2 = [];
                 for(var i = 0; i < result.length; i++){

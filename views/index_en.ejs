@@ -1,18 +1,15 @@
 <% include header_client %><body>
 <a href="javascript:" id="return-to-top"><i class="fas fa-arrow-up"></i></a>
 <nav class="navbar navbar-expand-lg">
-    <!-- Just an image -->
-    <nav class="navbar">
-        <a class="navbar-brand" href="#">
-            <img src="images/horgony.png" width="30" height="30" alt="">
-        </a>
-    </nav>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <a class="navbar-brand" href="#"><img src="images/horgony.png" width="30" height="30" alt=""></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
         <i class="fas fa-bars color"></i>
     </button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mx-auto">
+    <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link down" href="#hazhoz">home delivery</a>
+            </li>
             <li class="nav-item">
                 <a class="nav-link down" href="#etlap">menu</a>
             </li>
@@ -23,44 +20,11 @@
                 <a class="nav-link down" href="#kapcsolat">contact</a>
             </li>
         </ul>
-        <a href="#">
-            <i class="fas fa-sign-in-alt" data-toggle="modal" data-target="#loginscreen"></i>
-        </a>
-
-        <span class="huen"><a href="\login">HU</a> | <b>EN</b> | <a href="\german">DE</a></span>
+        <span class="navbar-text huen">
+      <a href="\login">HU</a> | <b>EN</b> | <a href="\german">DE</a>
+    </span>
     </div>
 </nav>
-<!-- Modal -->
-<div class="modal fade" id="loginscreen" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="ModalLabel">Log in (only for administrator)</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <form method="post" action="/login">
-                <div class="modal-body">
-
-                    <div class="form-group">
-                        <label for="recipient-name" class="col-form-label">User name:</label>
-                        <input type="text" class="form-control" id="recipient-name" name="user">
-                    </div>
-                    <div class="form-group">
-                        <label for="message-text" class="col-form-label">Password:</label>
-                        <input  type="password" class="form-control" id="message-text" name="pw">
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="submit" class="btn btn-primary">Log in</button>
-                </div>
-            </form>
-        </div>
-    </div>
-</div>
-
 <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
     <div class="carousel-inner">
         <div class="carousel-item active">
@@ -74,21 +38,90 @@
         </div>
     </div>
 </div>
+
 <div class="container">
-    <div class="row blokk" id="etlap">
+    <div class="row blokk" id="hazhoz">
         <div class="col-sm-12 col-md-12 col-xs-12 col-lg-12" align="center">
-            <h1 class="maintitle">Menu</h1>
-            <h4 class="picmenu"><a href="menu.pdf"><i class="fas fa-utensils maintitle"></i>Official menu with pictures</a></h4>
-       
-	 </div>
-        <!--<div class="menu">
-            <a href="#eloetel">Starter</a> | <a href="#leves">Soup</a> | <a href="#salata">Salad</a> |
-            <a href="#roston">Grill dishes</a> | <a href="#frissen">Main dishes</a> |
-            <a href="#hal">Fish dishes</a> | <a href="#koret">Garnish</a> |
-            <a href="#olaszos">Pasta</a> | <a href="#hazajanlat">Offer of the house</a> |
-            <a href="#pizza">Pizza</a> | <a href="#desszert">Dessert</a>
-        </div>-->
+            <h1 class="maintitle"> Home delivery </h1>
+            <h5>From April 12 </h5>
+        </div>
+        <div class="col-sm-12 col-md-12 col-xs-12 col-lg-12" align="center">
+            <h5>Order between 10:30 AM and 8:30 PM:<br>
+                <b>+36 30 9225 109,<br> +36 87 438 127,</b><br>
+                delivery between 11 AM and 9 PM.
+            </h5>
+        </div>
+        <div class="col-sm-12 col-md-12 col-xs-12 col-lg-12 blokk">
+            <table class="table myTable">
+                <thead>
+                <th>Settlement</th>
+                <th>Delivery fee</th>
+                <th>Minimum order</th>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Tihany</td>
+                    <td>free</td>
+                    <td>1500 HUF</td>
+                </tr>
+                <tr>
+                    <td>Aszófő</td>
+                    <td>free</td>
+                    <td>1500 HUF</td>
+                </tr>
+                <tr>
+                    <td>Balatonfüred</td>
+                    <td>600 HUF</td>
+                    <td>2000 HUF</td>
+                </tr>
+                <tr>
+                    <td>Örvényes</td>
+                    <td>600 HUF</td>
+                    <td>2000 HUF</td>
+                </tr>
+                <tr>
+                    <td>Balatonudvari</td>
+                    <td>600 HUF</td>
+                    <td>2000 HUF</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col-sm-12 col-md-12 col-xs-12 col-lg-12 blokk" align="center">
+            <i class="fas fa-exclamation-circle"></i>
+            In addition to cash payment at the courier, credit card and SZÉP card payments are also possible. <br>
+            During the preparation, packaging and food delivery, we place special care on safe conditions.
+        </div>
     </div>
+
+</div>
+
+<div class="row blokk" id="etlap">
+    <div class="col-sm-12 col-md-12 col-xs-12 col-lg-12" align="center">
+        <h1 class="caption">Menu</h1>
+    </div>
+</div>
+<div class="row blokk">
+    <div class="col-sm-12 col-md-4 col-xs-12 col-lg-4" align="center">
+        <img src="images/menu1.jpeg" class="d-block w-100" alt="...">
+    </div>
+    <div class="col-sm-12 col-md-4 col-xs-12 col-lg-4" align="center">
+        <img src="images/menu2.jpeg" class="d-block w-100" alt="...">
+    </div>
+    <div class="col-sm-12 col-md-4 col-xs-12 col-lg-4" align="center">
+        <img src="images/menu3.jpeg" class="d-block w-100" alt="...">
+    </div>
+
+
+    <!--
+            <div class="menu">
+                <a href="#eloetel"> Eőételek</a> | <a href="#leves">Levesek</a> | <a href="#salata">Saláták</a> |
+                <a href="#roston">Roston sült grillételek</a> | <a href="#frissen">Frissensültek</a> |
+                <a href="#hal">Halételek</a> | <a href="#koret">Köretek</a> |
+                <a href="#olaszos">Olaszos tésztafélék</a> | <a href="#hazajanlat">Ház ajánlata</a> |
+                <a href="#pizza">Pizzák</a> | <a href="#desszert">Desszertek</a>
+            </div>
+    -->
 </div>
 </div>
 
@@ -148,10 +181,10 @@
                 <tbody>
                 <tr>
                     <td>Tihany, <br>Kossuth Lajos utca 18.</td>
-                    <td>From March to November, <br>every day, <br>10 AM - 9 PM</td>
+                    <td>Only home delivery.</td>
                     <td>tihany@stegpizzeria.hu, <br>+36 87 438 127</td>
                     <td>cash, <br>"SZÉP" card, <br>bank card</td>
-                    <td>Free in Tihany, <br>during the season.</td>
+                    <td>Free in Tihany and Aszófő. <a href="#hazhoz">More...</a></td>
                 </tr>
                 </tbody>
             </table>
@@ -167,7 +200,7 @@
             </tr>
             <tr>
                 <th scope="row"><div class="c_title">Open hours:</div></th>
-                <td>From March to November, every day, 10 AM - 9 PM</td>
+                <td>Only home delivery.</td>
             </tr>
             <tr>
                 <th scope="row"><div class="c_title">Contact:</div></th>
@@ -179,7 +212,7 @@
             </tr>
             <tr>
                 <th scope="row"><div class="c_title">Home delivery:</div></th>
-                <td>Free in Tihany, during the season.</td>
+                <td>Free in Tihany and Aszófő. <a href="#hazhoz">More...</a></td>
             </tr>
             </tbody>
         </table>
@@ -195,14 +228,14 @@
 <div class="footer" align="center">
     © 2018 TÓTH JUDIT
 </div>
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 <script
-        src="https://code.jquery.com/jquery-3.3.1.js"
-        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-        crossorigin="anonymous">
-</script>
+        src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
 
 <script>
     $(document).ready(function(){

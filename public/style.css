@@ -251,3 +251,18 @@ a:active {
     border-bottom: 0px dotted #725757;
 }
 
+.myTable {
+    text-align: center;
+    border-style: dashed;
+    border-color: white;
+}
+
+.row {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.table {
+    color: white;
+}
+

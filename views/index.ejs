@@ -2,18 +2,15 @@
 <body>
 <a href="javascript:" id="return-to-top"><i class="fas fa-arrow-up"></i></a>
 <nav class="navbar navbar-expand-lg">
-    <!-- Just an image -->
-    <nav class="navbar">
-        <a class="navbar-brand" href="#">
-            <img src="images/horgony.png" width="30" height="30" alt="">
-        </a>
-    </nav>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <a class="navbar-brand" href="#"><img src="images/horgony.png" width="30" height="30" alt=""></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
         <i class="fas fa-bars color"></i>
     </button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mx-auto">
+    <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link down" href="#hazhoz">házhozszállítás</a>
+            </li>
             <li class="nav-item">
                 <a class="nav-link down" href="#etlap">étlap</a>
             </li>
@@ -24,13 +21,12 @@
                 <a class="nav-link down" href="#kapcsolat">kapcsolat</a>
             </li>
         </ul>
-        <a href="#">
-            <i class="fas fa-sign-in-alt" data-toggle="modal" data-target="#loginscreen"></i>
-        </a>
-
-        <span class="huen"><b> HU</b> | <a href="\english">EN</a> | <a href="\german">DE</a></span>
+        <span class="navbar-text huen">
+      <b> HU</b> | <a href="\english">EN</a> | <a href="\german">DE</a>
+    </span>
     </div>
 </nav>
+
 <!-- Modal -->
 <div class="modal fade" id="loginscreen" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
@@ -62,7 +58,6 @@
     </div>
 </div>
 
-<% include closedModal %>
 <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
     <div class="carousel-inner">
         <div class="carousel-item active">
@@ -77,21 +72,88 @@
     </div>
 </div>
 <div class="container">
-    <div class="row blokk" id="etlap">
+    <div class="row blokk" id="hazhoz">
         <div class="col-sm-12 col-md-12 col-xs-12 col-lg-12" align="center">
-            <h1 class="maintitle"> Étlap </h1>
-            <h4 class="picmenu"><a href="menu.pdf"><i class="fas fa-utensils maintitle"></i> Képes étlap megtekintése</a></h4>
+            <h1 class="maintitle"> Házhozszállítás </h1>
+            <h5> 2020. április 12-től  </h5>
+        </div>
+        <div class="col-sm-12 col-md-12 col-xs-12 col-lg-12" align="center">
+            <h5>Rendelésfelvétel 10:30 és 20:30 között: <br>
+                <b>+36 30 9225 109,<br> +36 87 438 127,</b><br>
+                kiszállítás 11:00 és 21:00 között.
+            </h5>
+        </div>
+        <div class="col-sm-12 col-md-12 col-xs-12 col-lg-12 blokk">
+            <table class="table myTable">
+                <thead>
+                <th>Település</th>
+                <th>Kiszállítás díja</th>
+                <th>Minimum rendelés</th>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Tihany</td>
+                    <td>ingyenes</td>
+                    <td>1500 HUF</td>
+                </tr>
+                <tr>
+                    <td>Aszófő</td>
+                    <td>ingyenes</td>
+                    <td>1500 HUF</td>
+                </tr>
+                <tr>
+                    <td>Balatonfüred</td>
+                    <td>600 HUF</td>
+                    <td>2000 HUF</td>
+                </tr>
+                <tr>
+                    <td>Örvényes</td>
+                    <td>600 HUF</td>
+                    <td>2000 HUF</td>
+                </tr>
+                <tr>
+                    <td>Balatonudvari</td>
+                    <td>600 HUF</td>
+                    <td>2000 HUF</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col-sm-12 col-md-12 col-xs-12 col-lg-12 blokk" align="center">
+            <i class="fas fa-exclamation-circle"></i>
+            A futárnál a készpénzes fizetés mellett bankkártyás, és SZÉP kártyás fizetés is lehetséges.<br>
+            Az ételek elkészítése, csomagolása és kiszállítása során kiemelt hangsúlyt fektetünk a biztonságos körülmények megteremtésére.
+        </div>
         </div>
 
-        <!--<div class="menu">
-            <a href="#eloetel"> Eőételek</a> | <a href="#leves">Levesek</a> | <a href="#salata">Saláták</a> |
-            <a href="#roston">Roston sült grillételek</a> | <a href="#frissen">Frissensültek</a> |
-            <a href="#hal">Halételek</a> | <a href="#koret">Köretek</a> |
-            <a href="#olaszos">Olaszos tésztafélék</a> | <a href="#hazajanlat">Ház ajánlata</a> |
-            <a href="#pizza">Pizzák</a> | <a href="#desszert">Desszertek</a>
-        </div>-->
-
     </div>
+
+    <div class="row blokk" id="etlap">
+        <div class="col-sm-12 col-md-12 col-xs-12 col-lg-12" align="center">
+            <h1 class="caption">Étlap</h1>
+        </div>
+    </div>
+<div class="row blokk">
+        <div class="col-sm-12 col-md-4 col-xs-12 col-lg-4" align="center">
+            <img src="images/menu1.jpeg" class="d-block w-100" alt="...">
+        </div>
+        <div class="col-sm-12 col-md-4 col-xs-12 col-lg-4" align="center">
+            <img src="images/menu2.jpeg" class="d-block w-100" alt="...">
+        </div>
+        <div class="col-sm-12 col-md-4 col-xs-12 col-lg-4" align="center">
+            <img src="images/menu3.jpeg" class="d-block w-100" alt="...">
+        </div>
+
+
+        <!--
+                <div class="menu">
+                    <a href="#eloetel"> Eőételek</a> | <a href="#leves">Levesek</a> | <a href="#salata">Saláták</a> |
+                    <a href="#roston">Roston sült grillételek</a> | <a href="#frissen">Frissensültek</a> |
+                    <a href="#hal">Halételek</a> | <a href="#koret">Köretek</a> |
+                    <a href="#olaszos">Olaszos tésztafélék</a> | <a href="#hazajanlat">Ház ajánlata</a> |
+                    <a href="#pizza">Pizzák</a> | <a href="#desszert">Desszertek</a>
+                </div>
+        -->
 </div>
 </div>
 
@@ -145,17 +207,17 @@
                 <th><div class="c_title">Cím:</div></th>
                 <th><div class="c_title">Nyitvatartás:</div></th>
                 <th><div class="c_title">Elérhetőségek:</div></th>
-                <th><div class="c_title">Fizető eszközök:</div></th>
+                <th><div class="c_title">Fizetőeszközök:</div></th>
                 <th><div class="c_title">Házhozszállítás:</div></th>
             </tr>
             </thead>
             <tbody>
             <tr>
                 <td>Tihany, <br>Kossuth Lajos utca 18.</td>
-                <td>Márciustól novemberig, <br>minden nap, <br>10:00 - 21:00</td>
+                <td>Éttermünkben jelenleg csak<br>házhozszállítást vállalunk.</td>
                 <td>tihany@stegpizzeria.hu, <br>+36 87 438 127</td>
-                <td>készpénz, <br>szép kártya, <br>bankkártya</td>
-                <td>Tihany területén ingyen, <br>szezonális jelleggel.</td>
+                <td>készpénz, <br>SZÉP kártya, <br>bankkártya</td>
+                <td>Tihany és Aszófő területén ingyen, <br>rendelésfelvétel 10:30 és 20:30 között.<br><a href="#hazhoz">Tovább...</a></td>
             </tr>
             </tbody>
         </table>
@@ -171,19 +233,19 @@
             </tr>
             <tr>
                 <th scope="row"><div class="c_title">Nyitvatartás:</div></th>
-                <td>Márciustól novemberig, minden nap, 10:00 - 21:00</td>
+                <td>Éttermünkben jelenleg csak házhozszállítást vállalunk.</td>
             </tr>
             <tr>
                 <th scope="row"><div class="c_title">Elérhetőségek:</div></th>
                 <td>tihany@stegpizzeria.hu, +36 87 438 127</td>
             </tr>
             <tr>
-                <th scope="row"><div class="c_title">Elfogadott fizető eszközök:</div></th>
-                <td>kézpénz, szép kártya, bankkártya</td>
+                <th scope="row"><div class="c_title">Fizetőeszközök:</div></th>
+                <td>készpénz, SZÉP kártya, bankkártya</td>
             </tr>
             <tr>
                 <th scope="row"><div class="c_title">Házhozszállítás:</div></th>
-                <td>Tihany területén ingyen, szezonális jelleggel.</td>
+                <td>Tihany és Aszófő területén ingyen, rendelésfelvétel 10:30 és 20:30 között.<br><a href="#hazhoz">Tovább...   </a></td>
             </tr>
             </tbody>
         </table>
@@ -200,17 +262,15 @@
     © 2018 TÓTH JUDIT
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script
+        src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+        crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDy544iCPzaulf0nJ8_E7ILUNt9n2ZXI6M&callback=initMap">
-</script>
+
 <script>
     $(document).ready(function(){
-        $(window).on('load', function(){
-            $('#closedModal').modal('show');
-        });
-
         /* scroll menu */
         $('a').on('click', function(event) {
             if (this.hash !== "") {
@@ -251,5 +311,6 @@
         });
     }
 </script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDy544iCPzaulf0nJ8_E7ILUNt9n2ZXI6M&callback=initMap"></script>
 </body>
 </html>
