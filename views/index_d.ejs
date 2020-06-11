@@ -2,21 +2,12 @@
 <body>
 <a href="javascript:" id="return-to-top"><i class="fas fa-arrow-up"></i></a>
 <nav class="navbar navbar-expand-lg">
-    <!-- Just an image -->
-    <nav class="navbar">
-        <a class="navbar-brand" href="#">
-            <img src="images/horgony.png" width="30" height="30" alt="">
-        </a>
-    </nav>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <a class="navbar-brand" href="#"><img src="images/horgony.png" width="30" height="30" alt=""></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
         <i class="fas fa-bars color"></i>
     </button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mx-auto d">
-            <li class="nav-item">
-                <a class="nav-link down" href="#etlap">speisekarte</a>
-            </li>
+    <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav mr-auto">
             <li class="nav-item">
                 <a class="nav-link down" href="#rolunk">über</a>
             </li>
@@ -24,11 +15,9 @@
                 <a class="nav-link down" href="#kapcsolat">kontakt</a>
             </li>
         </ul>
-        <a href="#">
-            <i class="fas fa-sign-in-alt" data-toggle="modal" data-target="#loginscreen"></i>
-        </a>
-
-        <span class="huen"><a href="\login">HU</a> | <a href="\english">EN</a> | <b>DE</b></span>
+        <span class="navbar-text huen">
+      <a href="\login">HU</a> | <b>EN</b> | <a href="\german">DE</a>
+    </span>
     </div>
 </nav>
 <!-- Modal -->
@@ -79,8 +68,6 @@
     <div class="row blokk" id="etlap">
         <div class="col-sm-12 col-md-12 col-xs-12 col-lg-12">
             <h1 class="maintitle">Speisekarte</h1>
-
-            <h4 class="picmenu"><a href="menu.pdf"><i class="fas fa-utensils maintitle"></i>Speisekarte mit Bilder</a></h4>
         </div>
         <!--<div class="menu">
             <a href="#eloetel">Vorspeisen</a> | <a href="#leves">Suppen</a> | <a href="#salata">Salaten</a> |
@@ -245,8 +232,7 @@
         });
     }
 </script>
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDy544iCPzaulf0nJ8_E7ILUNt9n2ZXI6M&callback=initMap">
-</script>
+<script async defer src=<%= googleApi %>></script>
 </body>
 </html>
 
