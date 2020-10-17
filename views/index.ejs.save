@@ -71,7 +71,7 @@
         </div>
     </div>
 </div>
-<div class="container">
+cd..<div class="container">
     <div class="row blokk" id="hazhoz">
         <div class="col-sm-12 col-md-12 col-xs-12 col-lg-12" align="center">
             <h4 class="maintitle d-sm-none"> Házhozszállítás </h4>
@@ -215,7 +215,7 @@
             <tbody>
             <tr>
                 <td>Tihany, <br>Kossuth Lajos utca 18.</td>
-                <td>11:00 - 21:00</td>
+                <td>Éttermünkben jelenleg csak<br>házhozszállítást vállalunk.</td>
                 <td>tihany@stegpizzeria.hu, <br>+36 87 438 127</td>
                 <td>készpénz, <br>SZÉP kártya, <br>bankkártya</td>
                 <td>Tihany és Aszófő területén ingyen, <br>rendelésfelvétel 10:30 és 20:30 között.<br><a href="#hazhoz">Tovább...</a></td>
@@ -234,7 +234,7 @@
             </tr>
             <tr>
                 <th scope="row"><div class="c_title">Nyitvatartás:</div></th>
-                <td>11:00 - 21:00</td>
+                <td>Éttermünkben jelenleg csak házhozszállítást vállalunk.</td>
             </tr>
             <tr>
                 <th scope="row"><div class="c_title">Elérhetőségek:</div></th>
